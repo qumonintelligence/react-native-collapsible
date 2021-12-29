@@ -26,11 +26,6 @@
   "types": "index.d.ts",
   "scripts": {
     "lint": "eslint --ext js,ts .",
-    "clean": "rimraf lib",
-    "start": "node_modules/react-native/packager/packager.sh",
-    "build": "babel src --out-dir lib",
-    "prepare": "npm run build",
-    "prepublish": "npm run clean && npm run build"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^2.0.0",
