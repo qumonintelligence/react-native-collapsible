@@ -16,11 +16,7 @@
     "toggle",
     "accordion"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://oblador@github.com/oblador/react-native-collapsible.git"
-  },
-  "author": "Joel Arvidsson <joel@oblador.se>",
+  "author": "Qumon Intelligence",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/oblador/react-native-collapsible/issues"
@@ -29,7 +25,12 @@
   "main": "Collapsible.js",
   "types": "index.d.ts",
   "scripts": {
-    "lint": "eslint --ext js,ts ."
+    "lint": "eslint --ext js,ts .",
+    "clean": "rimraf lib",
+    "start": "node_modules/react-native/packager/packager.sh",
+    "build": "babel src --out-dir lib",
+    "prepare": "npm run build",
+    "prepublish": "npm run clean && npm run build"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^2.0.0",
