@@ -25,7 +25,7 @@
   "main": "Collapsible.js",
   "types": "index.d.ts",
   "scripts": {
-    "lint": "eslint --ext js,ts .",
+    "lint": "eslint --ext js,ts ."
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^2.0.0",
